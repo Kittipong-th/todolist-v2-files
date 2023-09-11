@@ -9,3 +9,6 @@ coverage
 
 # Ignore a folder named 'config'
 /config/
+
+# Local Netlify folder
+.netlify
