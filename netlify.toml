@@ -1,7 +1,10 @@
 [build]
   command = "npm run build"
-  functions = "netlify/functions"
+  functions = "path/to/your/functions"
   publish = ""
+ 
+ 
+
 
 # Uncomment to use this redirect for Single Page Applications like create-react-app.
 # Not needed for static site generators.
