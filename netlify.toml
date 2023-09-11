@@ -1,6 +1,7 @@
 # example netlify.toml
+
 [build]
-  command = "npm run build"
+  command = "npm run start"
 
 [context.production.environment]
   MONGODB_URL = "${MONGODB_URL}"
