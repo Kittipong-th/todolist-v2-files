@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+process.env.MONGO_PASSWORD
+coverage
+.dat
+
+# Ignore environmental variables file
+.env
+
+# Ignore a folder named 'config'
+/config/
