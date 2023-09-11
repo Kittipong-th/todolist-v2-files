@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
-  functions = "path/to/your/functions"
-  publish = ""
+  publish = "public"
  
  
 
