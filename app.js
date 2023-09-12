@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 require("dotenv").config(); // Load the .env file
 
-mongoose.connect(process.env.MONGODB_URL, {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
 });
 
@@ -130,6 +130,8 @@ app.get("/about", function (req, res) {
   res.render("about");
 });
 
-app.listen(3000, function () {
+const port = process.env.PORT;
+
+app.listen(port, function () {
   console.log("Server started on port 3000");
 });
