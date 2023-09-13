@@ -55,10 +55,6 @@ async function findAllItems() {
   }
 }
 
-async function findOneName(customListName) {
-  await List.findOne({ name: customListName });
-}
-
 app.get("/", async function (req, res) {
   const day = date.getDate();
   const getItem = await findAllItems();
